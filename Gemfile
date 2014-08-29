@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '4.1.5'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -19,7 +19,7 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'bootstrap-sass'
 
-gem 'bcrypt-ruby'
+gem 'bcrypt'
 
 
 group :doc do
