@@ -1,5 +1,11 @@
 @import 'bootstrap';
 
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
 $lightGray: #999;
 
 /* universal */
@@ -99,4 +105,15 @@ footer {
       margin-left: 10px;
     }
   }
+}
+
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box-sizing(border-box);
 }
