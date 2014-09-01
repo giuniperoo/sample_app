@@ -19,6 +19,9 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'bootstrap-sass'
 
+# Add browser vendor prefixes automatically
+gem 'autoprefixer-rails'
+
 gem 'bcrypt'
 
 
