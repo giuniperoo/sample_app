@@ -1,26 +1,19 @@
 /* universal */
 
-html {
-  overflow-y: scroll;
-}
+* { box-sizing: border-box; }
 
-body {
-  padding-top: 60px;
-}
+html { overflow-y: scroll; }
 
-section {
-  overflow: auto;
-}
+body { padding-top: 60px; }
 
-textarea {
-  resize: vertical;
-}
+section { overflow: auto; }
+
+textarea { resize: vertical; }
 
 .center {
   text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
+
+  h1 { margin-bottom: 10px; }
 }
 
 
@@ -64,6 +57,7 @@ p {
   padding-top: 13px;
   font-weight: bold;
   line-height: 1;
+
   &:hover {
     color: #fff;
     text-decoration: none;
@@ -77,15 +71,18 @@ aside {
   section {
     padding: 10px 0;
     border-top: 1px solid $gray-lighter;
+
     &:first-child {
       border: 0;
       padding-top: 0;
     }
+
     span {
       display: block;
       margin-bottom: 3px;
       line-height: 1;
     }
+
     h1 {
       font-size: 1.4em;
       text-align: left;
@@ -102,6 +99,33 @@ aside {
 }
 
 
+/* forms */
+
+input,
+select,
+textarea,
+.uneditable-input {
+  width: 100%;
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+}
+
+input { height: auto !important; }
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+}
+
+
 /* footer */
 
 footer {
@@ -109,18 +133,19 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: $gray-lighter;
+
   a {
     color: #555;
-    &:hover {
-      color: #222;
-    }
+
+    &:hover { color: #222; }
   }
-  small {
-    float: left;
-  }
+
+  small { float: left; }
+
   ul {
     float: right;
     list-style: none;
+
     li {
       float: left;
       margin-left: 10px;
@@ -136,5 +161,4 @@ footer {
   float: left;
   width: 100%;
   margin-top: 45px;
-  box-sizing: border-box;
 }
