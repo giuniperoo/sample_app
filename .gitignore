@@ -15,5 +15,8 @@
 /log/*.log
 /tmp
 
+# Ignore Spring files.
+/spring/*.pid
+
 config/secrets.yml
 .DS_Store
