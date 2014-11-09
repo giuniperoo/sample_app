@@ -14,12 +14,12 @@
 ActiveRecord::Schema.define(version: 20141105102550) do
 
   create_table "users", force: true do |t|
-    t.string   "name",            limit: 255
-    t.string   "email",           limit: 255
+    t.string   "name"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "password_digest", limit: 255
-    t.string   "remember_token",  limit: 255
+    t.string   "password_digest"
+    t.string   "remember_token"
     t.string   "remember_digest"
   end
 
